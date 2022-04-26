@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		73FBD630281374E5007009C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD62F281374E5007009C8 /* AppDelegate.swift */; };
 		73FBD632281374E5007009C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD631281374E5007009C8 /* SceneDelegate.swift */; };
-		73FBD634281374E5007009C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD633281374E5007009C8 /* ViewController.swift */; };
-		73FBD637281374E5007009C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FBD635281374E5007009C8 /* Main.storyboard */; };
+		73FBD634281374E5007009C8 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD633281374E5007009C8 /* AlbumsViewController.swift */; };
 		73FBD639281374E7007009C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73FBD638281374E7007009C8 /* Assets.xcassets */; };
 		73FBD63C281374E7007009C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73FBD63A281374E7007009C8 /* LaunchScreen.storyboard */; };
 		73FBD647281374E7007009C8 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD646281374E7007009C8 /* AlbumTests.swift */; };
 		73FBD651281374E7007009C8 /* AlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD650281374E7007009C8 /* AlbumUITests.swift */; };
 		73FBD653281374E7007009C8 /* AlbumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD652281374E7007009C8 /* AlbumUITestsLaunchTests.swift */; };
+		73FBD66128137795007009C8 /* albums.json in Resources */ = {isa = PBXBuildFile; fileRef = 73FBD66028137795007009C8 /* albums.json */; };
+		73FBD664281377D5007009C8 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD663281377D5007009C8 /* AlbumModel.swift */; };
+		73FBD66628137870007009C8 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD66528137870007009C8 /* AlbumViewModel.swift */; };
+		73FBD66A28137AA3007009C8 /* AlbumDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD66928137AA3007009C8 /* AlbumDataLoader.swift */; };
+		73FBD66C28138D9A007009C8 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD66B28138D9A007009C8 /* ImageLoader.swift */; };
+		73FBD6712813BD33007009C8 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD6702813BD32007009C8 /* AlbumTableViewCell.swift */; };
+		73FBD6742816F32C007009C8 /* AlbumsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBD6732816F32C007009C8 /* AlbumsTableViewHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +45,7 @@
 		73FBD62C281374E5007009C8 /* Album.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Album.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FBD62F281374E5007009C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73FBD631281374E5007009C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73FBD633281374E5007009C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		73FBD636281374E5007009C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73FBD633281374E5007009C8 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		73FBD638281374E7007009C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73FBD63B281374E7007009C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73FBD63D281374E7007009C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		73FBD64C281374E7007009C8 /* AlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FBD650281374E7007009C8 /* AlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumUITests.swift; sourceTree = "<group>"; };
 		73FBD652281374E7007009C8 /* AlbumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		73FBD66028137795007009C8 /* albums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = albums.json; sourceTree = "<group>"; };
+		73FBD663281377D5007009C8 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		73FBD66528137870007009C8 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		73FBD66928137AA3007009C8 /* AlbumDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDataLoader.swift; sourceTree = "<group>"; };
+		73FBD66B28138D9A007009C8 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		73FBD6702813BD32007009C8 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		73FBD6732816F32C007009C8 /* AlbumsTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTableViewHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,12 @@
 		73FBD62E281374E5007009C8 /* Album */ = {
 			isa = PBXGroup;
 			children = (
-				73FBD62F281374E5007009C8 /* AppDelegate.swift */,
+				73FBD66F2813A678007009C8 /* Loader */,
+				73FBD66E2813A65B007009C8 /* Model */,
+				73FBD66D2813A60D007009C8 /* Utilities */,
+				73FBD65F2813775D007009C8 /* Resources */,
 				73FBD631281374E5007009C8 /* SceneDelegate.swift */,
-				73FBD633281374E5007009C8 /* ViewController.swift */,
-				73FBD635281374E5007009C8 /* Main.storyboard */,
-				73FBD638281374E7007009C8 /* Assets.xcassets */,
-				73FBD63A281374E7007009C8 /* LaunchScreen.storyboard */,
-				73FBD63D281374E7007009C8 /* Info.plist */,
+				73FBD6722816F2D9007009C8 /* Controller */,
 			);
 			path = Album;
 			sourceTree = "<group>";
@@ -125,6 +136,53 @@
 				73FBD652281374E7007009C8 /* AlbumUITestsLaunchTests.swift */,
 			);
 			path = AlbumUITests;
+			sourceTree = "<group>";
+		};
+		73FBD65F2813775D007009C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73FBD66028137795007009C8 /* albums.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		73FBD66D2813A60D007009C8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				73FBD62F281374E5007009C8 /* AppDelegate.swift */,
+				73FBD638281374E7007009C8 /* Assets.xcassets */,
+				73FBD63A281374E7007009C8 /* LaunchScreen.storyboard */,
+				73FBD63D281374E7007009C8 /* Info.plist */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		73FBD66E2813A65B007009C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73FBD663281377D5007009C8 /* AlbumModel.swift */,
+				73FBD66528137870007009C8 /* AlbumViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		73FBD66F2813A678007009C8 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				73FBD66928137AA3007009C8 /* AlbumDataLoader.swift */,
+				73FBD66B28138D9A007009C8 /* ImageLoader.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		73FBD6722816F2D9007009C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				73FBD633281374E5007009C8 /* AlbumsViewController.swift */,
+				73FBD6732816F32C007009C8 /* AlbumsTableViewHeader.swift */,
+				73FBD6702813BD32007009C8 /* AlbumTableViewCell.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +289,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73FBD66128137795007009C8 /* albums.json in Resources */,
 				73FBD63C281374E7007009C8 /* LaunchScreen.storyboard in Resources */,
 				73FBD639281374E7007009C8 /* Assets.xcassets in Resources */,
-				73FBD637281374E5007009C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73FBD634281374E5007009C8 /* ViewController.swift in Sources */,
+				73FBD66C28138D9A007009C8 /* ImageLoader.swift in Sources */,
+				73FBD634281374E5007009C8 /* AlbumsViewController.swift in Sources */,
+				73FBD664281377D5007009C8 /* AlbumModel.swift in Sources */,
+				73FBD66A28137AA3007009C8 /* AlbumDataLoader.swift in Sources */,
 				73FBD630281374E5007009C8 /* AppDelegate.swift in Sources */,
+				73FBD6742816F32C007009C8 /* AlbumsTableViewHeader.swift in Sources */,
+				73FBD66628137870007009C8 /* AlbumViewModel.swift in Sources */,
 				73FBD632281374E5007009C8 /* SceneDelegate.swift in Sources */,
+				73FBD6712813BD33007009C8 /* AlbumTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +361,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		73FBD635281374E5007009C8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				73FBD636281374E5007009C8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		73FBD63A281374E7007009C8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +498,6 @@
 				INFOPLIST_FILE = Album/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +525,6 @@
 				INFOPLIST_FILE = Album/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
