@@ -10,11 +10,6 @@ import UIKit
 
 struct Albums: Decodable {
     var results: [Album]
-
-    @discardableResult mutating func addAlbum(_ album: Album) -> Album {
-        self.results.append(album)
-        return album
-    }
 }
 
 struct Album: Decodable {
